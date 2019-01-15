@@ -24,12 +24,20 @@ public class Parantez {
 			
 			
 			// PARANTEZ ÝNDÝSÝ BULUCU
-			int parantezsayisi=0;
+			int parantezsayisi=0,iparantez=0,dparantez=0;
 			for (int i = 0; i < dizi.length; i++) {
 				if (dizi[i].equals("(")) {
 					parantezsayisi++;
+					iparantez++;
 				}else if (dizi[i].equals(")")) {
-					parantezsayisi++;}}
+					parantezsayisi++;
+					dparantez++;}}
+			
+			//SYNTAX ERROR
+			if(iparantez!=dparantez){
+				return "Syntax Error";
+			}
+			
 			
 			int ptzi[]=new int[parantezsayisi];
 			int ptzs=0;

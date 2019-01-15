@@ -91,7 +91,7 @@ public class Yakalayici {
 					
 					
 					
-					// BOÞLUK SÝLÝCÝ
+					// BOÞLUK SÝLÝCÝ v2
 					for (int i = 0; i < s1.length; i++) {
 							if (s1[s1.length-1].equals("")) {
 								if (s1[i].equals("")) {
