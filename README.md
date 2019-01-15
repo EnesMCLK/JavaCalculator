@@ -98,4 +98,5 @@ Advanced text-based calculator
 <p>Output: 5.710036949078403E25</p>
 
 <h2>Set Angle</h2>
-<a href= https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif> <img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/></a>
+<a href= https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif>Example
+  <img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/></a>
