@@ -4,7 +4,8 @@ Advanced text-based calculator
 <img src="https://media.giphy.com/media/APpE6R98GIvf74OC0f/giphy.gif" title="Example Code"/>
 
 <h3>Set Angle</h3>
-<img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/>
+<p>
+  <img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/></p>
 
 <h2>Functions</h2> 
 
