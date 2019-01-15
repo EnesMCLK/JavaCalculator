@@ -3,7 +3,6 @@ Advanced text-based calculator
 
 <img src="https://media.giphy.com/media/APpE6R98GIvf74OC0f/giphy.gif" title="Example Code"/>
 
-<h2>Set Angle</h2>
 <img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/>
 
 <h2>Functions</h2> 
