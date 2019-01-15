@@ -40,7 +40,7 @@ public class YeniHesaplama {
 		s02=Double.valueOf(dizi[isaretindisi+1]);
 		donen=(s01)/(s02);
 		
-		dizi[isaretindisi-1]=String.valueOf(donen);		// ›ﬁARET ORTADA ve SONDAYSA (-1)
+		dizi[isaretindisi-1]=String.valueOf(donen);		// ISARET ORTADA veya SONDAYSA (-1)
 	}
 	
 	public void kok(String dizi[],int isaretindisi){
@@ -48,7 +48,7 @@ public class YeniHesaplama {
 		s02=Double.valueOf(dizi[isaretindisi+1]);
 		donen=Math.sqrt(s02);
 		
-		dizi[isaretindisi]=String.valueOf(donen);		// ›ﬁARET ONDEYSE (0)
+		dizi[isaretindisi]=String.valueOf(donen);		// ISARET ONDEYSE (0)
 	}
 	
 	public void xkup(String dizi[],int isaretindisi){
@@ -271,7 +271,7 @@ public class YeniHesaplama {
 		
 		for (int d = dongusayisi; d > 0; d--) {
 			
-			//S›L›C›
+			//S√ùL√ùC√ù
 			for (int s = (isaretindisi+2-ik); s <= dizi.length-2; s++) {
 				dizi[s]=dizi[s+1];
 			}
@@ -285,7 +285,7 @@ public class YeniHesaplama {
 		double sonuc;
 		
 		
-		// ›ﬁLEM SIRASI K÷K
+		// ISLEM SIRASI K√ñK
 		for (int i = dizi.length-1; i >= 0; i--) {
 			if (dizi[i].equals("k")) {
 				yh.kok(dizi, i);
@@ -296,7 +296,7 @@ public class YeniHesaplama {
 		
 		
 		
-		// ›ﬁLEM SIRASI X
+		// ISLEM SIRASI X
 		int xs=0;
 		for (int i = 0; i < dizi.length; i++) {
 			if (dizi[i].equals("xb")||dizi[i].equals("xf")||dizi[i].equals("xu")||dizi[i].equals("xk")) {xs++;}}
@@ -326,7 +326,7 @@ public class YeniHesaplama {
 		
 		
 		
-		//›ﬁLEM SIRASI ‹S
+		// ISLEM SIRASI √úS
 		for (int i = 0; i < dizi.length; i++) {
 			if (dizi[i].equals("^")) {
 				yh.us(dizi, i);
@@ -338,8 +338,8 @@ public class YeniHesaplama {
 		
 		
 		
-		// TR› HYP LOG nPr nCr
-		//›ﬁLEM SIRASI TR›GONOMETR›
+		// TRI HYP LOG nPr nCr
+		// ISLEM SIRASI TRIGONOMETRI
 		for (int i = dizi.length-1; i >= 0; i--) {
 			if (dizi[i].equals("t")) {
 				yh.tan(dizi, i, donusum);
@@ -373,7 +373,7 @@ public class YeniHesaplama {
 		
 		
 		
-		// ›ﬁLEM SIRASI LOGAR›TMA
+		// ISLEM SIRASI LOGARITMA
 		for (int i = dizi.length-1; i >= 0; i--) {
 			if (dizi[i].equals("l")) {
 				yh.log(dizi, i);
@@ -386,7 +386,7 @@ public class YeniHesaplama {
 		
 		
 		
-		//›ﬁLEM SIRASI PER, COM
+		// ISLEM SIRASI PER, COM
 		for (int i = dizi.length-1; i >= 0; i--) {
 			if (dizi[i].equals("P")) {
 				yh.per(dizi, i);
@@ -400,7 +400,7 @@ public class YeniHesaplama {
 		
 		
 		
-		// ›ﬁLEM SIRASI «ARPMA,B÷LME
+		// ISLEM SIRASI √áARPMA, B√ñLME
 		for (int i = dizi.length-1; i >= 0; i--) {
 			if (dizi[i].equals("*")) {
 				yh.carp(dizi, i);
@@ -413,7 +413,7 @@ public class YeniHesaplama {
 		
 		
 		
-		// ›ﬁLEM SIRASI TOPLAMA,«IKARMA
+		// ISLEM SIRASI TOPLAMA,√áIKARMA
 		for (int i = 0; i < dizi.length; i++) {
 			if (dizi[i].equals("+")) {
 				yh.topla(dizi, i);
