@@ -22,7 +22,7 @@ public class calistir{
 		
 		
 		Scanner ss=new Scanner(System.in);
-		System.out.println("L¸tfen ›˛lem Giriniz... | Please Enter Math Process...");
+		System.out.println("L√ºtfen √ù√ælem Giriniz... | Please Enter Math Process...");
 		String s=ss.nextLine();
 		s = s.replaceAll("\\s", "");
 		s = s.trim();
@@ -35,8 +35,8 @@ public class calistir{
 /* 		   "d","Derece","Degress"
 		   "g","Grad" , "Gradian"
 		   "r","Radyan","Radians"|
-		  						 |
-		  						 |
+		  			 |
+		  			 |
 		                         v           */
 		sonuc=calistir.yakala(s,"d");
 		
