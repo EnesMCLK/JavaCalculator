@@ -3,9 +3,6 @@ Advanced text-based calculator
 
 <img src="https://media.giphy.com/media/APpE6R98GIvf74OC0f/giphy.gif" title="Example Code"/>
 
-Set Angle
-<img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/>
-
 <h2>Functions</h2> 
 
 <h3>Addition</h3>
@@ -99,4 +96,3 @@ Set Angle
 <h3>HypCos</h3>
 <p>Example: hc45</p>
 <p>Output: 5.710036949078403E25</p>
-
