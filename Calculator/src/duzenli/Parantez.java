@@ -18,12 +18,12 @@ public class Parantez {
 			}
 		}
 		
-		// PARANTEZ DÖNGÜSÜ
+		// PARANTEZ DÃ–NGÃœSÃœ
 		for (int l = 0; l < dongusayisi; l++) {
 			
 			
 			
-			// PARANTEZ ÝNDÝSÝ BULUCU
+			// PARANTEZ INDIS BULUCU
 			int parantezsayisi=0,iparantez=0,dparantez=0;
 			for (int i = 0; i < dizi.length; i++) {
 				if (dizi[i].equals("(")) {
@@ -47,14 +47,14 @@ public class Parantez {
 					ptzs++;}}
 			
 			
-			// PARANTEZ ÖNCELÝÐÝ
+			// PARANTEZ Ã–NCELIGI
 			for (int t = 0; t < ptzi.length; t++) {
 				if (dizi[ptzi[t]].equals("(")) {
 					if (dizi[ptzi[t+1]].equals(")")) {
 						
 						
 						
-						String pislemi[]=new String[ptzi[t+1]-ptzi[t]-1]; // Hesaplanmaya Gönderilecek Ýþlem...
+						String pislemi[]=new String[ptzi[t+1]-ptzi[t]-1]; // Hesaplanmaya GÃ¶nderilecek Islem...
 						
 						for (int i = 0; i < pislemi.length; i++) {
 							pislemi[i]=dizi[ptzi[t]+i+1];
@@ -84,7 +84,7 @@ public class Parantez {
 						
 						
 						
-						// SÝLÝCÝ
+						// SÃLÃCÃ
 						for (int s = 0; s < ptzi[t+1]-ptzi[t]; s++) {
 							for (int i = ptzi[t]+1; i < dizi.length-1; i++) {
 								dizi[i]=dizi[i+1];
