@@ -32,18 +32,18 @@ public class Yakalayici {
 				
 				
 				
-				// ÝNDÝS BULUCU {'+','-','*','/','(',')','^','k','x','f','l','e','n','p','P','C','h','b','u'}
+				// INDIS BULUCU {'+','-','*','/','(',')','^','k','x','f','l','e','n','p','P','C','h','b','u'}
 				for (int i = 0; i < s.length(); i++) {	
 					if (c1[i]=='+'|c1[i]=='-'|c1[i]=='*'|c1[i]=='/'|c1[i]=='('|c1[i]==')'|c1[i]=='^'
 							|c1[i]=='a'|c1[i]=='t'|c1[i]=='c'|c1[i]=='s'|c1[i]=='k'|c1[i]=='x'|c1[i]=='f'|c1[i]=='u'
 							|c1[i]=='l'|c1[i]=='e'|c1[i]=='n'|c1[i]=='p'|c1[i]=='P'|c1[i]=='C'|c1[i]=='h'|c1[i]=='b') {
 						
-						if (sem[jj1]==0) {										// sem[] = Sembollerin Ýndis Deðerlerini Belirten Dizi
+						if (sem[jj1]==0) {										// sem[] = Sembollerin Indis Degerlerini Belirten Dizi
 							sem[jj1]=i;
 							jj1++;
-							y=((s.length()-1));									// y = 's' Kelimesindeki Ýndis Sayýsý
+							y=((s.length()-1));									// y = 's' Kelimesindeki Indis Sayisi
 						}
-						p++;													// p = Döngü Sayýsý = Sembol Sayýsý
+						p++;													// p = DÃ¶ngÃ¼ SayÃ½sÃ½ = Sembol SayÃ½sÃ½
 					}}
 					String s1[]=new String[2*p+1];
 					
@@ -54,18 +54,18 @@ public class Yakalayici {
 					// AYIRICI
 					s1[0]=s.substring(0,sem[0]);
 					
-					j1=y-sem[p-1];												// j1 = Son Kelimenin Uzunluðu	   sem[p-1] = Son þaretten önceki Ýþaretin Ýndisi
-																				// j2 = Son Sembolün Uzunluðu	-> j2=y-sem[p]+1;
+					j1=y-sem[p-1];												// j1 = Son Kelimenin UzunluÃ°u	   sem[p-1] = Son Ã¾aretten Ã¶nceki ÃÃ¾aretin Ãndisi
+																				// j2 = Son SembolÃ¼n UzunluÃ°u	-> j2=y-sem[p]+1;
 					
 					
-					for (int i = 2; i <=2*p ; i+=2) { try{ 						// RAKAM ARALIÐI
+					for (int i = 2; i <=2*p ; i+=2) { try{ 						// RAKAM ARALIGI
 						s1[i]=s.substring(sem[u1]+1, sem[u1+1]);
 						u1++;}
 					catch (StringIndexOutOfBoundsException e) {
 						s1[i]=s.substring(y-j1+1, y+1);}}
 					
 					
-					for (int i = 1; i <=2*p-1; i+=2) { try{			 			//SEMBOL ARALIÐI
+					for (int i = 1; i <=2*p-1; i+=2) { try{			 			//SEMBOL ARALIGI
 						s1[i]=s.substring(sem[u2], sem[u2]+1);
 						u2++;}
 					catch (StringIndexOutOfBoundsException e) {
@@ -75,7 +75,7 @@ public class Yakalayici {
 					
 					
 					
-					// SÖZ DÝZÝMÝ HATASI
+					// SÃ–Z DIZIMI HATASI
 					if (c2[c2.length-1]==('+')) {
 						return "Syntax Error";}
 					else if (c2[c2.length-1]==('-')) {
@@ -91,17 +91,17 @@ public class Yakalayici {
 					
 					
 					
-					// BOÞLUK SÝLÝCÝ v2
+					// BOSLUK SILICI v2
 					for (int i = 0; i < s1.length; i++) {
 							if (s1[s1.length-1].equals("")) {
 								if (s1[i].equals("")) {
-									by++;											// Boþluk Yakalayýcý -> by
+									by++;											// BoÃ¾luk YakalayÃ½cÃ½ -> by
 								for (int j = i; j < s1.length-2; j++) {
 									s1[j]=s1[j+1];}
 								i--;}}
 							else {
 								if (s1[i].equals("")) {
-									by++;											// Boþluk Yakalayýcý -> by
+									by++;											// BoÃ¾luk YakalayÃ½cÃ½ -> by
 								for (int j = i; j < s1.length-1; j++) {
 									s1[j]=s1[j+1];}
 								i--;}}}
@@ -126,12 +126,12 @@ public class Yakalayici {
 								s0[i]="+";
 								for (int j = i+1; j < s0.length-1; j++) {
 									s0[j]=s0[j+1];}
-								ey++;										// Eksi Yakalayýcý -> ey
+								ey++;										// Eksi YakalayÃ½cÃ½ -> ey
 								i--;}
 							else if (s0[i+1].equals("+")) {
 								for (int j = i+1; j < s0.length-1; j++) {
 									s0[j]=s0[j+1];}
-								ey++;										// Eksi Yakalayýcý -> ey
+								ey++;										// Eksi YakalayÃ½cÃ½ -> ey
 								i--;}
 							else if (s0[i+1].equals("*")) {
 								return "Syntax Error";}
@@ -143,13 +143,13 @@ public class Yakalayici {
 							if (s0[i+1].equals("+")) {
 								for (int j = i; j < s0.length-1; j++) {
 									s0[j]=s0[j+1];}
-								ay++;										// Artý Yakalayýcý -> ay
+								ay++;										// ArtÃ½ YakalayÃ½cÃ½ -> ay
 								i--;}
 							else if (s0[i+1].equals("-")) {
 									s0[i]="-";
 								for (int j = i; j < s0.length-1; j++) {
 									s0[j]=s0[j+1];}
-								ay++;										// Artý Yakalayýcý -> ay
+								ay++;										// ArtÃ½ YakalayÃ½cÃ½ -> ay
 								i--;}
 							else if (s0[i+1].equals("*")) {
 								return "Syntax Error";}
@@ -160,14 +160,14 @@ public class Yakalayici {
 						if (s0[0].equals("+")) {
 							for (int j = i; j < s0.length-1; j++) {
 								s0[j]=s0[j+1];}
-							iay++;											// Ýlk Artý Yakalayýcý -> iay
+							iay++;											// Ãlk ArtÃ½ YakalayÃ½cÃ½ -> iay
 							i--;}}
 					
 					
 					
 					
 					
-					// "at","ac","as","xk","xf","xb","hs","hc","ht" DEÐERÝNÝ BÝRLEÞTÝRME
+					// "at","ac","as","xk","xf","xb","hs","hc","ht" DEGERLERINI BIRLESTIRME
 					for (int i = 0; i < s0.length-2; i++) {
 						if (s0[i].equals("a")) {
 							if (s0[i+1].equals("t")) {
@@ -265,7 +265,7 @@ public class Yakalayici {
 					
 					
 					
-					// 'e','p' DEÐERÝNÝ TANIMLAMA
+					// 'e','p' DEGERLERINI TANIMLAMA
 					for (int i = 0; i < s0.length-2; i++) {
 						if (s0[i].equals("e")) {
 							s0[i]=String.valueOf(Math.E);
@@ -280,7 +280,7 @@ public class Yakalayici {
 					
 					
 					
-					// "+" DEÐERÝNÝ BÝRLEÞTÝRME
+					// "+" DEGERLERINI BIRLESTIRME
 					for (int i = 0; i < s0.length-2; i++) {
 						if (s0[i].equals("*")||s0[i].equals("/")||s0[i].equals("^")||s0[i].equals("k")
 								||s0[i].equals("t")||s0[i].equals("at")||s0[i].equals("s")||s0[i].equals("as")
@@ -299,7 +299,7 @@ public class Yakalayici {
 					
 					
 					
-					// "-" DEÐERÝNÝ BÝRLEÞTÝRME
+					// "-" DEGERLERINI BIRLESTIRME
 					for (int i = 0; i < s0.length-2; i++) {
 						if (s0[i].equals("*")||s0[i].equals("/")||s0[i].equals("+")||s0[i].equals("k")
 								||s0[i].equals("^")||s0[i].equals("t")||s0[i].equals("at")||s0[i].equals("s")
@@ -400,7 +400,7 @@ public class Yakalayici {
 					
 					
 					
-					// ÜS DEN SONRA PARANTEZ AÇICI
+					// ÃœS DEN SONRA PARANTEZ AÃ‡ICI
 					int us=0;
 					for (int i = 0; i < s3.length; i++) {
 						if (s3[i].equals("^")) {
@@ -423,7 +423,7 @@ public class Yakalayici {
 					
 					
 					
-					// DIÞ PARANTEZ SONRASI HATA KONTROLCÜSÜ
+					// DIS PARANTEZ SONRASI HATA KONTROLCÃœSÃœ
 					for (int i = 0; i < s4.length; i++) {
 						if (s4[i].equals(")")||s4[i].equals("xb")||s4[i].equals("xf")||s4[i].equals("xk")||
 								s4[i].equals("xu")) {
