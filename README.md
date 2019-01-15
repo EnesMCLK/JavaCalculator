@@ -106,6 +106,5 @@ Advanced text-based calculator
 <p>Output: 2.718281828459045</p>
 
 <h2>Set Angle</h2>
-![setangle](https://user-images.githubusercontent.com/40140673/51175991-d526de00-18cc-11e9-8e84-e00a66520e6e.gif)
-
+<img src="https://user-images.githubusercontent.com/40140673/51175991-d526de00-18cc-11e9-8e84-e00a66520e6e.gif" title="Set Angle"/>
 
