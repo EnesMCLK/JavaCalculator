@@ -106,6 +106,6 @@ Advanced text-based calculator
 <p>Output: 2.718281828459045</p>
 
 <h2>Set Angle</h2>
-<a href= https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif>Example
-  <img src="https://media.giphy.com/media/1O3lYzljC2HVgwUXzA/giphy.gif" title="Set Angle/></a>
+![setangle](https://user-images.githubusercontent.com/40140673/51175991-d526de00-18cc-11e9-8e84-e00a66520e6e.gif)
+
 
