@@ -22,7 +22,7 @@ public class calistir{
 		
 		
 		Scanner ss=new Scanner(System.in);
-		System.out.println("Lütfen Ýþlem Giriniz... | Please Enter Math Process...");
+		System.out.println("Lütfen Islem Giriniz... | Please Enter Math Process...");
 		String s=ss.nextLine();
 		s = s.replaceAll("\\s", "");
 		s = s.trim();
