@@ -271,7 +271,7 @@ public class YeniHesaplama {
 		
 		for (int d = dongusayisi; d > 0; d--) {
 			
-			//SÝLÝCÝ
+			//SILICI
 			for (int s = (isaretindisi+2-ik); s <= dizi.length-2; s++) {
 				dizi[s]=dizi[s+1];
 			}
