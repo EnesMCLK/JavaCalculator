@@ -75,7 +75,7 @@ Advanced text-based calculator
 
 <h3>x²</h3>
 <p>Example: 5xk</p>
-<p>Output:  0.2</p>
+<p>Output:  25.0</p>
 
 <h3>x³</h3>
 <p>Example: 5xu</p>
